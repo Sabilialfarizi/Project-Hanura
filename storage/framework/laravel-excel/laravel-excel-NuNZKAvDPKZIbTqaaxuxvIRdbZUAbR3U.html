@@ -1,0 +1,174 @@
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Import Export Excel & CSV to Database in Laravel 7</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+    <style>
+    td.text{
+        mso-number-format:"@"
+    }
+       
+    </style>
+    
+</head>
+
+<body>
+    <table>
+        <thead>
+            <tr>
+                <th>No.</th>
+                <th>No. KTA</th>
+                <th>Penerbit KTA</th>
+                <th>Nama</th>
+                <th>NIK <br>(16 digit)</th>
+                <th>Jenis Kelamin</th>
+                <th>Tempat Lahir</th>
+                <th>Tanggal Lahir <br> (dd-mm-yyyy)</th>
+                <th>Status Perkawinan <br> S=Sudah, B=Belum, P=Pernah</th>
+                <th>Status Pekerjaan</th>
+                <th>Alamat</th>
+                <th>Kelurahan KPU</th>
+            </tr>
+        </thead>
+        <tbody>
+                        <tr>
+                <td>1</td>
+                <td> 31.75.01.1006.000022 </td>
+                <td>                     KOTA ADM. JAKARTA TIMUR</td>
+                <td>Yudi Agus</td>
+                <td class="text"> 3190191192877788 </td>
+                <td>Laki-Laki</td>
+                <td>JAKARTA</td>
+                <td>1-12-1993 </td>
+                                <td>B</td>
+                                <td>Dokter</td>
+                <td>Jakarta</td>
+                <td > 3175011001 </td>
+
+            </tr>
+                        <tr>
+                <td>2</td>
+                <td> 12.02.01.2023.0036 </td>
+                <td>                     KOTA ADM. JAKARTA TIMUR</td>
+                <td>Oesman Sapta Odang</td>
+                <td class="text"> 12245365 </td>
+                <td>Laki-Laki</td>
+                <td>JAKARTA</td>
+                <td>1-12-1992 </td>
+                                <td>B</td>
+                                <td>Pelajar</td>
+                <td>sungapangn</td>
+                <td > 3175011006 </td>
+
+            </tr>
+                        <tr>
+                <td>3</td>
+                <td> 31.75.01.1002.000014 </td>
+                <td>                     KOTA ADM. JAKARTA TIMUR</td>
+                <td>yudi</td>
+                <td class="text"> 280 946 50 </td>
+                <td>Laki-Laki</td>
+                <td>jakarta</td>
+                <td>29-5-1991 </td>
+                                <td>B</td>
+                                <td></td>
+                <td>jl asem</td>
+                <td > 3175011002 </td>
+
+            </tr>
+                        <tr>
+                <td>4</td>
+                <td> 31.75.02.1002.000010 </td>
+                <td>                     KOTA ADM. JAKARTA TIMUR</td>
+                <td>Joko</td>
+                <td class="text"> 0383838383 </td>
+                <td>Laki-Laki</td>
+                <td>Lelo</td>
+                <td>25-5-1995 </td>
+                                <td>Psikolog</td>
+                <td>exp</td>
+                <td > 3175021002 </td>
+
+            </tr>
+                        <tr>
+                <td>5</td>
+                <td> 31.75.01.1001.000011 </td>
+                <td>                     KOTA ADM. JAKARTA TIMUR</td>
+                <td>SAEFUDIN</td>
+                <td class="text"> 32133171212111 </td>
+                <td>Laki-Laki</td>
+                <td>JAKARTA</td>
+                <td>29-5-1992 </td>
+                                <td>B</td>
+                                <td>Mahasiswa</td>
+                <td>adsad</td>
+                <td > 3175011001 </td>
+
+            </tr>
+                        <tr>
+                <td>6</td>
+                <td> 31.75.06.1004.000016 </td>
+                <td>                     KOTA ADM. JAKARTA TIMUR</td>
+                <td>achmad</td>
+                <td class="text"> 3122121121111111 </td>
+                <td>Laki-Laki</td>
+                <td>Jakarta</td>
+                <td>12-12-1992 </td>
+                                <td>B</td>
+                                <td>Pelajar</td>
+                <td>Jakarta</td>
+                <td > 3175061004 </td>
+
+            </tr>
+                        <tr>
+                <td>7</td>
+                <td> 31.75.03.1002.000019 </td>
+                <td>                     KOTA ADM. JAKARTA TIMUR</td>
+                <td>ggagag</td>
+                <td class="text"> 166 </td>
+                <td>Laki-Laki</td>
+                <td>haha</td>
+                <td>1-6-2022 </td>
+                                <td>B</td>
+                                <td>Dosen</td>
+                <td>Jakarta</td>
+                <td > 3175031002 </td>
+
+            </tr>
+                        <tr>
+                <td>8</td>
+                <td> 31.75...000020 </td>
+                <td>                     KOTA ADM. JAKARTA TIMUR</td>
+                <td>dpc KOTA ADM. JAKARTA TIMUR</td>
+                <td class="text"> 123455 </td>
+                <td>Laki-Laki</td>
+                <td>indonesia</td>
+                <td>1-1-1970 </td>
+                                <td>B</td>
+                                <td>Pelajar</td>
+                <td>alamat</td>
+                <td >  </td>
+
+            </tr>
+                        <tr>
+                <td>9</td>
+                <td> 31.75.01.1001.000023 </td>
+                <td>                     KOTA ADM. JAKARTA TIMUR</td>
+                <td>SA</td>
+                <td class="text"> 3175062310990010121 </td>
+                <td>Laki-Laki</td>
+                <td>JAKARTA</td>
+                <td>2-6-2022 </td>
+                                <td>B</td>
+                                <td>Penulis</td>
+                <td>Aa</td>
+                <td > 3175011001 </td>
+
+            </tr>
+                    </tbody>
+    </table>
+</body>
+
+</html>

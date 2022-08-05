@@ -1,0 +1,715 @@
+{
+	"info": {
+		"_postman_id": "c33d5458-6f52-44cf-bde9-40377972c967",
+		"name": "ABSENSI V3",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "login",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "2ede2bc6-ebfe-4218-b5b2-d4e9490de818",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "email",
+							"value": "gatot.gaul51@gmail.com",
+							"type": "text"
+						},
+						{
+							"key": "password",
+							"value": "123456",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "https://absensi.yazfi.co.id/login",
+					"protocol": "https",
+					"host": [
+						"absensi",
+						"yazfi",
+						"co",
+						"id"
+					],
+					"path": [
+						"login"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "register",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "email",
+							"value": "gatot.gaul560@gmail.com",
+							"type": "text"
+						},
+						{
+							"key": "password",
+							"value": "123456",
+							"type": "text"
+						},
+						{
+							"key": "alamat",
+							"value": "sungapangn",
+							"type": "text"
+						},
+						{
+							"key": "telepon",
+							"value": "0987671",
+							"type": "text"
+						},
+						{
+							"key": "nama",
+							"value": "Cloud",
+							"type": "text"
+						},
+						{
+							"key": "nik",
+							"value": "12245365",
+							"type": "text"
+						},
+						{
+							"key": "tglLahir",
+							"value": "1992-12-12",
+							"type": "text"
+						},
+						{
+							"key": "role_id",
+							"value": "1",
+							"type": "text"
+						},
+						{
+							"key": "jabatan",
+							"value": "1",
+							"type": "text"
+						},
+						{
+							"key": "jk",
+							"value": "laki-laki",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "{{base_url}}/register",
+					"host": [
+						"{{base_url}}"
+					],
+					"path": [
+						"register"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "absen masuk",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC8xOTIuMTY4LjEuMTM6ODAwMFwvYXBpXC9sb2dpbiIsImlhdCI6MTYxMzQwMjQ3MiwiZXhwIjoxNjEzNDA2MDcyLCJuYmYiOjE2MTM0MDI0NzIsImp0aSI6InJEc01zZXZpalU4dUlSWFEiLCJzdWIiOjksInBydiI6Ijg3ZTBhZjFlZjlmZDE1ODEyZmRlYzk3MTUzYTE0ZTBiMDQ3NTQ2YWEifQ.KIEZfxg1C2azXeQXnSMIWpKaKrzbpMU9GoncrqDAsxQ",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC8xOTIuMTY4LjEuMTI6ODAwMFwvYXBpXC9sb2dpbiIsImlhdCI6MTYxMzAzMzgxNSwiZXhwIjoxNjEzMDM3NDE1LCJuYmYiOjE2MTMwMzM4MTUsImp0aSI6IjZuTG1sbzhSdHlGYTVseFoiLCJzdWIiOjksInBydiI6Ijg3ZTBhZjFlZjlmZDE1ODEyZmRlYzk3MTUzYTE0ZTBiMDQ3NTQ2YWEifQ.0Anb5hjs76kUIKfkRl8g326qoNg3qzVvN-usi1JGHpY",
+						"type": "text",
+						"disabled": true
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "karyawan_id",
+							"value": "7",
+							"type": "text"
+						},
+						{
+							"key": "lat",
+							"value": "6.2478388",
+							"type": "text"
+						},
+						{
+							"key": "long",
+							"value": "106.6829441",
+							"type": "text"
+						},
+						{
+							"key": "latlokasi",
+							"value": "6.2478388",
+							"type": "text"
+						},
+						{
+							"key": "longlokasi",
+							"value": "106.6829441",
+							"type": "text"
+						},
+						{
+							"key": "alamat",
+							"value": "podok aren",
+							"type": "text"
+						},
+						{
+							"key": "lokasi",
+							"value": "kantor utama",
+							"type": "text"
+						},
+						{
+							"key": "keterangan",
+							"value": "masuk",
+							"type": "text"
+						},
+						{
+							"key": "ft_selfie_in",
+							"type": "file",
+							"src": "/C:/Users/Cloud/Downloads/WhatsApp Image 2021-02-08 at 10.42.12.jpeg"
+						}
+					]
+				},
+				"url": {
+					"raw": "{{base_url}}/absenmasuk",
+					"host": [
+						"{{base_url}}"
+					],
+					"path": [
+						"absenmasuk"
+					],
+					"query": [
+						{
+							"key": "ID_Karyawan",
+							"value": "2",
+							"disabled": true
+						},
+						{
+							"key": "lat",
+							"value": "-6.2478564",
+							"disabled": true
+						},
+						{
+							"key": "long",
+							"value": "106.6829227",
+							"disabled": true
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "daily absen",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"type": "text",
+						"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC8xMjcuMC4wLjE6ODAwMFwvYXBpXC9sb2dpbiIsImlhdCI6MTYyODQxMzUwMSwiZXhwIjoxNjI4NDE3MTAxLCJuYmYiOjE2Mjg0MTM1MDEsImp0aSI6ImxrQ1ZXcWZoeFliN3QwVHAiLCJzdWIiOjksInBydiI6IjIzYmQ1Yzg5NDlmNjAwYWRiMzllNzAxYzQwMDg3MmRiN2E1OTc2ZjcifQ.jf9i-qamsGaevKcl4Yan_I7i3h2p1U6CAfMloGxnObg"
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "karyawan_id",
+							"value": "7",
+							"type": "text",
+							"disabled": true
+						},
+						{
+							"key": "lat",
+							"value": "6.2478388",
+							"type": "text",
+							"disabled": true
+						},
+						{
+							"key": "long",
+							"value": "106.6829441",
+							"type": "text",
+							"disabled": true
+						},
+						{
+							"key": "latlokasi",
+							"value": "6.2478388",
+							"type": "text",
+							"disabled": true
+						},
+						{
+							"key": "longlokasi",
+							"value": "106.6829441",
+							"type": "text",
+							"disabled": true
+						},
+						{
+							"key": "alamat",
+							"value": "podok aren",
+							"type": "text",
+							"disabled": true
+						},
+						{
+							"key": "lokasi",
+							"value": "kantor utama",
+							"type": "text",
+							"disabled": true
+						},
+						{
+							"key": "keterangan",
+							"value": "masuk",
+							"type": "text",
+							"disabled": true
+						},
+						{
+							"key": "ft_selfie_in",
+							"type": "file",
+							"src": "/C:/Users/Cloud/Downloads/WhatsApp Image 2021-02-08 at 10.42.12.jpeg",
+							"disabled": true
+						}
+					]
+				},
+				"url": {
+					"raw": "{{base_url}}/getdailyabsen/7",
+					"host": [
+						"{{base_url}}"
+					],
+					"path": [
+						"getdailyabsen",
+						"7"
+					],
+					"query": [
+						{
+							"key": "ID_Karyawan",
+							"value": "2",
+							"disabled": true
+						},
+						{
+							"key": "lat",
+							"value": "-6.2478564",
+							"disabled": true
+						},
+						{
+							"key": "long",
+							"value": "106.6829227",
+							"disabled": true
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Absen Pulang",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC8xOTIuMTY4LjEuMTM6ODAwMFwvYXBpXC9sb2dpbiIsImlhdCI6MTYxMzQwMjQ3MiwiZXhwIjoxNjEzNDA2MDcyLCJuYmYiOjE2MTM0MDI0NzIsImp0aSI6InJEc01zZXZpalU4dUlSWFEiLCJzdWIiOjksInBydiI6Ijg3ZTBhZjFlZjlmZDE1ODEyZmRlYzk3MTUzYTE0ZTBiMDQ3NTQ2YWEifQ.KIEZfxg1C2azXeQXnSMIWpKaKrzbpMU9GoncrqDAsxQ",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC8xOTIuMTY4LjEuMTI6ODAwMFwvYXBpXC9sb2dpbiIsImlhdCI6MTYxMzAzMzgxNSwiZXhwIjoxNjEzMDM3NDE1LCJuYmYiOjE2MTMwMzM4MTUsImp0aSI6IjZuTG1sbzhSdHlGYTVseFoiLCJzdWIiOjksInBydiI6Ijg3ZTBhZjFlZjlmZDE1ODEyZmRlYzk3MTUzYTE0ZTBiMDQ3NTQ2YWEifQ.0Anb5hjs76kUIKfkRl8g326qoNg3qzVvN-usi1JGHpY",
+						"type": "text",
+						"disabled": true
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "karyawan_id",
+							"value": "7",
+							"type": "text"
+						},
+						{
+							"key": "lat",
+							"value": "6.2478388",
+							"type": "text"
+						},
+						{
+							"key": "long",
+							"value": "106.6829441",
+							"type": "text"
+						},
+						{
+							"key": "latlokasi",
+							"value": "6.2478388",
+							"type": "text"
+						},
+						{
+							"key": "longlokasi",
+							"value": "106.6829441",
+							"type": "text"
+						},
+						{
+							"key": "alamat",
+							"value": "podok aren",
+							"type": "text"
+						},
+						{
+							"key": "lokasi",
+							"value": "kantor utama",
+							"type": "text"
+						},
+						{
+							"key": "ft_selfie_out",
+							"type": "file",
+							"src": "/C:/Users/Cloud/Downloads/WhatsApp Image 2021-02-08 at 10.42.12.jpeg"
+						}
+					]
+				},
+				"url": {
+					"raw": "{{base_url}}/absenkeluar",
+					"host": [
+						"{{base_url}}"
+					],
+					"path": [
+						"absenkeluar"
+					],
+					"query": [
+						{
+							"key": "ID_Karyawan",
+							"value": "1",
+							"disabled": true
+						},
+						{
+							"key": "lat",
+							"value": "-6.33295",
+							"disabled": true
+						},
+						{
+							"key": "long",
+							"value": "106.678459",
+							"disabled": true
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Lokasi",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC8xMjcuMC4wLjE6ODAwMFwvYXBpXC9sb2dpbiIsImlhdCI6MTYyODQxMzUwMSwiZXhwIjoxNjI4NDE3MTAxLCJuYmYiOjE2Mjg0MTM1MDEsImp0aSI6ImxrQ1ZXcWZoeFliN3QwVHAiLCJzdWIiOjksInBydiI6IjIzYmQ1Yzg5NDlmNjAwYWRiMzllNzAxYzQwMDg3MmRiN2E1OTc2ZjcifQ.jf9i-qamsGaevKcl4Yan_I7i3h2p1U6CAfMloGxnObg",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "user_latitude",
+							"value": "-6.229376368918054",
+							"type": "text"
+						},
+						{
+							"key": "user_longitude",
+							"value": "106.84947887671353",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "{{base_url}}/lokasi",
+					"host": [
+						"{{base_url}}"
+					],
+					"path": [
+						"lokasi"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "IZIN",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC8xMjcuMC4wLjE6ODAwMFwvYXBpXC9sb2dpbiIsImlhdCI6MTU4OTAxMjk2OSwiZXhwIjoxNTg5MDE2NTY5LCJuYmYiOjE1ODkwMTI5NjksImp0aSI6IlFXNlE3WnhTZHlnOEFPQXciLCJzdWIiOjEsInBydiI6Ijg3ZTBhZjFlZjlmZDE1ODEyZmRlYzk3MTUzYTE0ZTBiMDQ3NTQ2YWEifQ.cenVZGUsnhyE-SZf0d4fr4eVkUFe4fmUsjm-cTC71-A",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "karyawan_id",
+							"value": "2",
+							"type": "text"
+						},
+						{
+							"key": "keterangan",
+							"value": "sakit",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "127.0.0.1:8000/api/izin",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"izin"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "update profile",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC8xMjcuMC4wLjE6ODAwMFwvYXBpXC9sb2dpbiIsImlhdCI6MTU4OTAzNzcxNSwiZXhwIjoxNTg5MDQxMzE1LCJuYmYiOjE1ODkwMzc3MTUsImp0aSI6IlpTZmM2Vm9Qa2dhbEpVSFoiLCJzdWIiOjEsInBydiI6Ijg3ZTBhZjFlZjlmZDE1ODEyZmRlYzk3MTUzYTE0ZTBiMDQ3NTQ2YWEifQ.3m0NXFISJOO1GrFIwIqFvbKCFeITc2tVageksqAKlVA",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "karyawanId",
+							"value": "2",
+							"type": "text"
+						},
+						{
+							"key": "nama",
+							"value": "gabdi",
+							"type": "text"
+						},
+						{
+							"key": "nik",
+							"value": "",
+							"type": "text",
+							"disabled": true
+						},
+						{
+							"key": "telp",
+							"value": "",
+							"type": "text",
+							"disabled": true
+						},
+						{
+							"key": "poto",
+							"type": "file",
+							"src": "/E:/FIF/DOKUMENTASI/TESTING OCR MMU 7 JAN 2021/gambar ktp/MicrosoftTeams-image (2).png"
+						}
+					]
+				},
+				"url": {
+					"raw": "127.0.0.1:8000/api/user/update",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"user",
+						"update"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "image profile",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC8xMjcuMC4wLjE6ODAwMFwvYXBpXC9sb2dpbiIsImlhdCI6MTU4OTA5NDkzOCwiZXhwIjoxNTg5MDk4NTM4LCJuYmYiOjE1ODkwOTQ5MzgsImp0aSI6InF3TnV2SzhmUm8waUlYUzMiLCJzdWIiOjEsInBydiI6Ijg3ZTBhZjFlZjlmZDE1ODEyZmRlYzk3MTUzYTE0ZTBiMDQ3NTQ2YWEifQ.a9EyJSG93lEICNT_Y8ChzB9v_aFm9YPbop02jKpoUMI",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8000/api/user/avatar/20200510065154_logo.png",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"user",
+						"avatar",
+						"20200510065154_logo.png"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "profile",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC9teWFic2Vuc2kubXlkZWt1MTQxMy54eXpcL3B1YmxpY1wvYXBpXC9sb2dpbiIsImlhdCI6MTYyODQzMzE5MywiZXhwIjoxNjI4NDM2NzkzLCJuYmYiOjE2Mjg0MzMxOTMsImp0aSI6ImhKZWJtQUFFNjJGU3VmcEMiLCJzdWIiOjksInBydiI6IjIzYmQ1Yzg5NDlmNjAwYWRiMzllNzAxYzQwMDg3MmRiN2E1OTc2ZjcifQ.UxGMo3n6jQ171BwpGSpZSSHOOH4VX9z3iGcBV1s_7HA",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{base_url}}/user",
+					"host": [
+						"{{base_url}}"
+					],
+					"path": [
+						"user"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Laporan absen",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC9teWRla3UxNDEzLnh5elwvcHVibGljXC9hcGlcL2xvZ2luIiwiaWF0IjoxNjE1MTIwNzUwLCJleHAiOjE2MTUxMjQzNTAsIm5iZiI6MTYxNTEyMDc1MCwianRpIjoic0Y5Z0ZuTzE1S25sSThyViIsInN1YiI6OSwicHJ2IjoiODdlMGFmMWVmOWZkMTU4MTJmZGVjOTcxNTNhMTRlMGIwNDc1NDZhYSJ9.J0YC3a1ONv3bZlFUzaz6oZ5fW7NCTSeJ0H7xS_GM6jU",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "token",
+							"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC8xMjcuMC4wLjE6ODAwMFwvYXBpXC9sb2dpbiIsImlhdCI6MTU4ODY4ODQ5NiwiZXhwIjoxNTg4NjkyMDk2LCJuYmYiOjE1ODg2ODg0OTYsImp0aSI6InJWQlNVbm9JZ1VaS3ZMU1kiLCJzdWIiOjEsInBydiI6Ijg3ZTBhZjFlZjlmZDE1ODEyZmRlYzk3MTUzYTE0ZTBiMDQ3NTQ2YWEifQ.TXiB-Vm64RCbUx93Zcz20mrxxG5HCPQXs9wIeBQMh8o",
+							"type": "text",
+							"disabled": true
+						}
+					]
+				},
+				"url": {
+					"raw": "{{base_url_prod}}/getabsen/7",
+					"host": [
+						"{{base_url_prod}}"
+					],
+					"path": [
+						"getabsen",
+						"7"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "absensi export",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC9teWRla3UxNDEzLnh5elwvcHVibGljXC9hcGlcL2xvZ2luIiwiaWF0IjoxNjEzMjM1NzIyLCJleHAiOjE2MTMyMzkzMjIsIm5iZiI6MTYxMzIzNTcyMiwianRpIjoiamw5RkljeTQxcGhLN1NlUiIsInN1YiI6OSwicHJ2IjoiODdlMGFmMWVmOWZkMTU4MTJmZGVjOTcxNTNhMTRlMGIwNDc1NDZhYSJ9.ulmEV8imMWgbvg1m1oO6X1c70gTwrqpda03YrAWEnZk",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "{{base_url_prod}}/absensi/export/7",
+					"host": [
+						"{{base_url_prod}}"
+					],
+					"path": [
+						"absensi",
+						"export",
+						"7"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "user",
+			"request": {
+				"method": "GET",
+				"header": []
+			},
+			"response": []
+		}
+	]
+}
